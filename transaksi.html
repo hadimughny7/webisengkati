@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main-container">
+		<div class="header" style="background-color: #32A941;">
+			<h1>Gaming Gear Collection</h1>
+		</div>
+		<div class="nav" style="background-color: #ffffff;">
+			<center>
+				<a href="index.html">Menu</a> | 
+				<a href="produk.html">Product</a> | 
+				<a href="tentang.html">About Us</a> | 
+				<a href="kontak.html">Contact</a>
+			</center>
+		</div>
+		</table>
+			<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td height="10" align="center" bgcolor="000000"></td>
+			</tr>
+			<tr>
+				<td align="center" valign="top" width="325" height="200" rowspan="4" bgcolor="#FFFFFF">
+					<div class="transaksi">
+						<center>
+						  <h1>Transaksi</h1><br><br>
+						  
+						  <table class="tabel">
+							<tr>
+							  <td class="td">Tipe Barang</td>
+							  <td>: <span id="tipe"></span></td>
+							</tr>
+							<tr>
+							  <td class="td">Nama Barang</td>
+							  <td>: <span id="nama"></span></td>
+							</tr>
+							<tr>
+							  <td class="td">Harga</td>
+							  <td>: <span id="harga"></span></td>
+							</tr>
+							<tr>
+							  <td class="td">Jumlah</td>
+							  <td>:  <input type="number" name="jumlah" id="jumlah" value="1" class="cart" min="1" oninput="calculateTotal()" /></td>
+							</tr>
+							<tr>
+							  <td>Total Harga</td>
+							  <td>: <span id="totalHarga"></span></td>
+							</tr>
+							<tr>
+							  <td>Alamat</td>
+							  <td>: <textarea name="Alamat" id="alamat" rows="3" cols="30"></textarea></td>
+							</tr>
+							<tr>
+							  <td>Pengiriman</td>
+							  <td>:
+								<select name="Pengiriman" id="pengiriman" class="select">
+								  <option value="JNE">JNE</option>
+								  <option value="J&T">J&T</option>
+								  <option value="SICEPAT">SICEPAT</option>
+								  <option value="NINJA EXPRESS">NINJA EXPRESS</option>
+								</select>
+							  </td>
+							</tr>
+						  </table><br><br><br><br>
+						  <a id="pesanButton" href="#" onclick="redirectToBerhasilBayar()"><button class="btn">Pesan</button></a><br><br><br>
+						</center>
+						<style>
+							.btn {
+   								 height: 35px;
+								background: #32A941;
+								border: 2px solid var(--main-color);
+								border-radius: 5px;
+								padding: 0 15px;
+								transition: all 0.3s;
+							}
+
+							.btn svg {
+								width: 100%;
+								height: 100%;
+								fill: var(--main-color);
+								transition: all 0.3s;
+							}
+
+
+
+							.btn:hover {
+								border: 2px solid #32A941;
+							}
+
+							.btn:hover svg {
+								fill: var(--main-focus);
+							}
+
+							.btn:active {
+								transform: translateY(3px);}
+						</style>
+								</tr>
+						</table>
+						<script>
+							function calculateTotal() {
+							  // Kode fungsi calculateTotal Anda letakkan di sini
+							}
+							
+							function redirectToBerhasilBayar() {
+							  const tipeBarang = document.getElementById('tipe').textContent;
+							  const namaBarang = document.getElementById('nama').textContent;
+							  const hargaBarang = document.getElementById('harga').textContent;
+							  const jumlahBarang = document.getElementById('jumlah').value;
+							  const totalHargaBarang = document.getElementById('totalHarga').textContent;
+							  const alamatPengiriman = document.getElementById('alamat').value;
+							  const metodePengiriman = document.getElementById('pengiriman').value;
+							
+							  const queryParams = `?tipe=${encodeURIComponent(tipeBarang)}&nama=${encodeURIComponent(namaBarang)}&harga=${encodeURIComponent(hargaBarang)}&jumlah=${encodeURIComponent(jumlahBarang)}&total=${encodeURIComponent(totalHargaBarang)}&alamat=${encodeURIComponent(alamatPengiriman)}&pengiriman=${encodeURIComponent(metodePengiriman)}`;
+							  
+							  // Membentuk URL dengan parameter kueri
+							  const berhasilBayarURL = `berhasil bayar.html${queryParams}`;
+							  
+							  // Mengarahkan ke halaman berhasil bayar.html
+							  window.location.href = berhasilBayarURL;
+							}
+							</script>
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<br>
+			<tr>
+				<td align="center" valign="center" width="100%" height="60" bgcolor="#333">
+					<font color="#ffffff">&copy; 22023 Gaming Gear. All rights reserved.</font>
+				</td>
+			</tr>
+		</table>
+		<script src="script.js"></script>
+</body>
+</html>

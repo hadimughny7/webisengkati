@@ -1,0 +1,377 @@
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+.main-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+	height: 120px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+
+}
+
+.nav {
+	height: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav a {
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #000;
+	margin: 0 10px;
+}
+
+.nav a:hover {
+	color: #000000;
+}
+
+.content-section {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+    width: 67%;
+  }
+  
+  .content-section h2 {
+    font-size: 24px;
+  }
+  
+  .content-section marquee {
+    behavior: alternate;
+    color: #000000;
+    direction: left;
+    scrolldelay: 40;
+    font-size: 24px;
+  }
+  
+  .content-section img {
+    width: 95%;
+   
+  }
+  
+  .product-link1 {
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    text-decoration: underline;
+
+  }
+  .sidebar {
+    background-color: #000000;
+    width: 205px;
+    padding: 20px;
+    height: 200px;
+}
+
+.sidebar p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.container {
+    display: flex;
+   
+  }
+
+  .spacer {
+    background-color: #FFFFFF;
+    height: 20px; 
+
+  }
+
+  .sidebarh {
+    background-color: #000000;
+    width: 220px;
+    padding: 20px;
+    height: 200px;
+  }
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-info img {
+    width: 150px;
+  }
+  
+  .contact-info h2 {
+    color: black;
+    font-size: 24px;
+  }
+  
+  .contact-info p {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  .contact-info a {
+    color: rgb(0, 0, 0);
+    text-decoration: ;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  
+  .product-item {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .product-item img {
+    width: 200px;
+  }
+  
+  .product-item h3 {
+    font-size: 18px;
+  }
+  
+  .product-item p {
+    font-size: 16px;
+  }
+  
+  .product-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .product-link:hover {
+    text-decoration: underline;
+  }
+  .container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .content-tentang {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .content-tentang h1 {
+    text-align: center;
+    color: #000;
+  }
+  
+  .content-tentang img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .content-tentang blockquote {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+  }
+  /* Card Styles */
+.content-box {
+    background-color: #FFF8E1;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.content-box p {
+    font-size: 20px;
+    line-height: 1.6;
+    height: 520px;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Updated value to start the cards in a single row */
+    gap: 20px;
+    background: #ffffff;
+    margin-top: 20px;
+    padding: 54px;
+
+}
+.card-row {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #ebe2e2;
+    --main-color: #323232;
+    --main-focus: #2d8cf0;
+    width: 200px;
+    height: 300px;
+    background: #fff;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding:20px;
+    gap: 10px;
+    
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+}
+
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color-sub);
+}
+
+.card-divider {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.card-price span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color-sub);
+}
+
+.card-btn {
+    height: 35px;
+    background: #32A941;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+}
+
+.card-btn svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+}
+
+.card-img:hover {
+    transform: translateY(-3px);
+}
+
+.card-btn:hover {
+    border: 2px solid #32A941;
+}
+
+.card-btn:hover svg {
+    fill: var(--main-focus);
+}
+
+.card-btn:active {
+    transform: translateY(3px);
+}
+.transaksi{
+    background-color: rgb(253, 253, 253);
+    margin: 20px;
+    display: flex;
+    min-height: 100vh;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    position: relative;
+  }
+  
+  hr{
+   width: 500px;
+   border-color: #fff;
+   }
+  
+  .tabel{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    border-color: #fff;
+  }
+.td{
+     font-size: 100%;  
+  }
+  
+  .td{ 
+    font-size: 100%;
+  
+  }
+
+  
